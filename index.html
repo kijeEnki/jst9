@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>javascript T9</title>
+</head>
+
+<body>
+    <h1>javascript T9 test</h1>
+    <div>
+        <p>I’ve built this because <strong>why not</strong>? This app is supposed to be a <strong>keypad input thing</strong>.</p>
+    </div>
+    <table>
+        <tr>
+            <td colspan="3" id="buffer">
+                <p>
+                    <span id="text"></span><span id="caret">_</span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <select id="layout">
+                    <option value="lc">lowercase</option>
+                    <option value="uc">UPPERCASE</option>
+                    <option value="nm">123456789</option>
+                    <option value="sm">$¥µ&­¤/¡©~</option>
+                    <option value="cl">абвгдежзи</option>
+                    <option value="cu">АБВГДЕЖЗИ</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td> <button id="1">1  ;!?</button> </td>
+            <td> <button id="2">2  abc</button> </td>
+            <td> <button id="3">3  def</button> </td>
+        </tr>
+        <tr>
+            <td> <button id="4">4  ghi</button> </td>
+            <td> <button id="5">5  jkl</button> </td>
+            <td> <button id="6">6  mno</button> </td>
+        </tr>
+        <tr>
+            <td> <button id="7">7 pqrs</button> </td>
+            <td> <button id="8">8  tuv</button> </td>
+            <td> <button id="9">9 wxyz</button> </td>
+        </tr>
+        <tr>
+            <td> <button id="star">*    ⇤</button> </td>
+            <td> <button id="0">0    ␣</button> </td>
+            <td> <button id="hash">#    →</button> </td>
+        </tr>
+    </table>
+    <script src="keypad.js"></script>
+</body>
+
+</html>

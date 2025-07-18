@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "X11 9x15B";
+    src: url("f/9x15B.ttf"), local("X11 9x15B");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "X11 9x15";
+    src: url("f/9x15.ttf"), local("X11 9x15");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "X11 10x20";
+    src: url("f/10x20.ttf"), local("X11 10x20");
+    font-weight: 400;
+}
+
+:root {
+    --font-default: 15px "X11 9x15";
+    --font-bold: 15px "X11 9x15B";
+    --font-big: 20px "X11 10x20";
+}
+
+body,
+div,
+p,
+h1,
+button,
+select {
+    font: var(--font-default);
+}
+
+b,
+strong,
+span#caret {
+    font: var(--font-bold);
+}
+
+h1 {
+    font: var(--font-big);
+}
+
+td#buffer {
+    height: 4em;
+    background-color: yellowgreen;
+    color: darkgreen;
+    border: 2px darkgreen;
+}
+
+td p {
+    height: 4em;
+    width: 100%;
+    margin: 0;
+}
+
+td select {
+    width: 100%;
+    height: 2em;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+span#text {
+    white-space: pre-wrap;
+    line-break: anywhere;
+}
+
+span#caret {
+    animation: blink 1s infinite;
+    user-select: none;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 25%
+    }
+
+    25% {
+        opacity: 25%
+    }
+
+    50% {
+        opacity: 100%
+    }
+
+    75% {
+        opacity: 100%
+    }
+
+    100% {
+        opacity: 25%
+    }
+}
+
+td button {
+    width: 100%;
+    height: 2em;
+    margin: 0;
+    border-radius: 0;
+    background-color: silver;
+    border: 2px outset gray;
+}
+
+td button:active {
+    background-color: gray;
+    border: 2px inset gray;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 0;
+    width: 10ch;
+}
